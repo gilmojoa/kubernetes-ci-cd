@@ -3,11 +3,11 @@ node {
     checkout scm
 
     env.DOCKER_API_VERSION="1.23"
-    env.httpProxyHost="proxy.sdc.hp.com"
-    env.httpProxyPort="8080"
-    env.httpsProxyHost="proxy.sdc.hp.com"
-    env.httpsProxyPort="8080"
-    env.nonProxyHosts="192.168.99.100"
+    env.http.proxyHost="proxy.sdc.hp.com"
+    env.http.proxyPort="8080"
+    env.https.proxyHost="proxy.sdc.hp.com"
+    env.https.proxyPort="8080"
+    env.http.nonProxyHosts="192.168.99.100"
     
     sh "git rev-parse --short HEAD > commit-id"
 
